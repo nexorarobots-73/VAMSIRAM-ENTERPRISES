@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'DeepTech India by VAMSIRAM',
+  title: 'VAMSIRAM Enterprises Pvt Ltd',
   description: "Empowering India's Deep Tech Future through AI-First Design Principles.",
 };
 
