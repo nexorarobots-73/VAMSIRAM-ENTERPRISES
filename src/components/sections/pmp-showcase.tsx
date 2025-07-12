@@ -36,18 +36,6 @@ export function PmpShowcase() {
             </Button>
           </div>
           <div className="order-1 lg:order-2">
-            <Card className="overflow-hidden shadow-lg shadow-blue-500/10 transform transition-transform duration-500 hover:scale-105 border border-border">
-              <CardContent className="p-0">
-                <Image
-                  src="https://placehold.co/600x450.png"
-                  alt="Post My Property Platform Showcase"
-                  width={600}
-                  height={450}
-                  className="w-full h-auto object-cover"
-                  data-ai-hint="real estate app"
-                />
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
