@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 210 29% 97%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 222 65% 32%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 40% 96.1%;
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+    --card: 224 71% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 224 71% 10%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 28% 17%;
     --muted-foreground: 215 20% 65%;
-    --accent: 36 100% 65%;
-    --accent-foreground: 222 47% 11%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 65% 32%;
+    --accent: 142 76% 51%; /* Electric Green */
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 142 76% 51%;
     --radius: 0.5rem;
   }
  
   .dark {
-    --background: 222 47% 11%;
+    --background: 224 71% 4%;
     --foreground: 210 40% 98%;
-    --card: 222 47% 11%;
+    --card: 224 71% 10%;
     --card-foreground: 210 40% 98%;
-    --popover: 222 47% 11%;
+    --popover: 224 71% 4%;
     --popover-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
-    --primary-foreground: 222 47% 11%;
-    --secondary: 217 33% 17%;
+    --primary-foreground: 224 71% 10%;
+    --secondary: 215 28% 17%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 17%;
+    --muted: 215 28% 17%;
     --muted-foreground: 215 20% 65%;
-    --accent: 36 100% 65%;
-    --accent-foreground: 222 47% 11%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 36 100% 65%;
+    --accent: 142 76% 51%; /* Electric Green */
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 142 76% 51%;
   }
 }
  

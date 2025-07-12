@@ -9,23 +9,24 @@ export function PmpShowcase() {
     "AI-Powered Property Matching",
     "Intuitive Design for All Users",
     "Scalable Real Estate Platform",
+    "Multilingual Support for Bharat"
   ];
 
   return (
-    <section id="pmp" className="py-16 lg:py-24 bg-secondary">
+    <section id="showcase" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 lg:order-1">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
               Flagship Platform: Post My Property
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Our first proof-of-concept, "Post My Property" (PMP), revolutionizes the real estate market by integrating our core AI + Design philosophy. It's more than a platform; it's the future of property technology.
+              Our first proof-of-concept, "Post My Property" (PMP), revolutionizes the real estate market by integrating our core AI + Design philosophy. It's more than a platform; it's the future of property technology, built for India.
             </p>
             <ul className="mt-6 space-y-3">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary" />
+                  <CheckCircle className="h-5 w-5 text-accent" />
                   <span className="text-base text-foreground/80">{feature}</span>
                 </li>
               ))}
@@ -35,7 +36,7 @@ export function PmpShowcase() {
             </Button>
           </div>
           <div className="order-1 lg:order-2">
-            <Card className="overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105">
+            <Card className="overflow-hidden shadow-lg shadow-blue-500/10 transform transition-transform duration-500 hover:scale-105 border border-border">
               <CardContent className="p-0">
                 <Image
                   src="https://placehold.co/600x450.png"

@@ -13,32 +13,32 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
 export const PITCH_DATA = {
-  title: 'Pitch Sections',
-  description: 'Our approach is multifaceted, addressing key areas to build a robust deep tech ecosystem.',
+  title: 'Our Solutions',
+  description: 'We are building a diverse portfolio of AI-powered solutions tailored for India\'s unique challenges and opportunities.',
   sections: [
     {
-      id: 'market-opportunity',
-      title: 'Market Opportunity',
-      content: "India's digital economy is projected to reach $1 trillion by 2025. We are positioned to capture a significant share by providing the critical AI-driven design infrastructure for emerging startups and established enterprises.",
-      keywords: 'market economy growth'
+      id: 'real-estate-ai',
+      title: 'Post My Property (Real Estate AI)',
+      content: "AI-driven platform to streamline property listings, valuation, and transactions for India's booming real estate market, focusing on Tier 2/3 cities.",
+      keywords: 'real estate property ai'
     },
     {
-      id: 'innovation-focus',
-      title: 'Innovation Focus',
-      content: 'We are at the nexus of AI and Design, creating a new paradigm of products that are not only intelligent but also intuitive and user-centric. This convergence is our core innovation.',
-      keywords: 'innovation ai design'
+      id: 'defense-healthcare',
+      title: 'Sonic Radar (Defense/Healthcare)',
+      content: 'Advanced sensor fusion and AI analysis for defense surveillance and non-invasive healthcare diagnostics. A high-impact, dual-use technology.',
+      keywords: 'radar defense healthcare'
     },
     {
-      id: 'strategic-roadmap',
-      title: 'Strategic Roadmap',
-      content: 'Our roadmap includes a 3-phase plan: 1. Launch flagship product (PMP). 2. Expand platform capabilities. 3. Foster a developer ecosystem. Each phase is designed for sustainable growth.',
-      keywords: 'strategy roadmap plan'
+      id: 'govtech',
+      title: 'Civic Chatbots (GovTech)',
+      content: 'Multilingual chatbots to improve citizen-government interaction, providing information and services efficiently and transparently.',
+      keywords: 'govtech chatbot citizen'
     },
     {
-      id: 'value-proposition',
-      title: 'VAMSIRAM’s Value Proposition',
-      content: 'We offer a unique combination of speed, scalability, and design excellence. Our AI-first platforms reduce development time by up to 40%, giving our clients a competitive edge.',
-      keywords: 'value proposition competitive'
+      id: 'ai-plugins',
+      title: 'AI Plugins (OCR, HR, Legal)',
+      content: 'A suite of versatile AI plugins for enterprises, including high-accuracy OCR, HR process automation, and legal document analysis.',
+      keywords: 'ai plugins enterprise'
     },
   ],
 };
@@ -52,7 +52,7 @@ export function LandingPage() {
   const pitchSectionTitles = PITCH_DATA.sections.map(s => s.title);
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
         <Hero />
@@ -75,16 +75,16 @@ export function LandingPage() {
         )}
         {analysisSummary && (
           <section id="analysis-results" className="container mx-auto max-w-4xl pb-16">
-            <Card className="bg-primary/5 border-primary/20 shadow-lg">
+            <Card className="bg-secondary border-primary/20 shadow-lg">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-3">AI-Powered Insights</h3>
+                <h3 className="text-2xl font-bold mb-3 text-primary">AI-Powered Insights</h3>
                 <p className="text-muted-foreground mb-4">{analysisSummary}</p>
                 <div className="flex flex-wrap gap-2">
                   {highlightedSections.map(section => (
-                    <Badge key={section} variant="secondary" className="text-base py-1 px-3 bg-primary/10 border-primary/20 text-primary-dark font-medium">{section}</Badge>
+                    <Badge key={section} variant="secondary" className="text-base py-1 px-3 bg-accent/10 border-accent/20 text-accent font-medium">{section}</Badge>
                   ))}
                 </div>
-                <Button variant="link" className="p-0 h-auto mt-4" onClick={() => {
+                <Button variant="link" className="p-0 h-auto mt-4 text-accent" onClick={() => {
                   const firstHighlightedId = PITCH_DATA.sections.find(s => s.title === highlightedSections[0])?.id;
                   if (firstHighlightedId) {
                     document.getElementById(firstHighlightedId)?.scrollIntoView({ behavior: 'smooth' });

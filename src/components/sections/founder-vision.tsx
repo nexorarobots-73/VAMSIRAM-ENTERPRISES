@@ -1,36 +1,45 @@
-import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function FounderVision() {
   return (
-    <section id="founder" className="py-16 lg:py-24 bg-secondary">
+    <section id="vision" className="py-16 lg:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            Founder's Vision
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
+            Our Vision
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            A message from our founder on the future we are building together.
+            Driven by a commitment to India's technological sovereignty and inclusive growth.
           </p>
         </div>
-        <Card className="max-w-4xl mx-auto shadow-lg">
-          <CardContent className="p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="text-center md:text-left">
-                <blockquote className="text-xl font-medium text-foreground italic">
-                  “We are not just building software; we are architecting the future of India's technological sovereignty. Our mission is to empower a million creators and businesses with the tools to innovate and build for a better India.”
-                </blockquote>
-                <p className="mt-4 font-semibold text-primary">
-                  Vamsi&Ram, Founder & Co Founder
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  VAMSIRAM ENTERPRISES PVT LTD
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <Card className="shadow-lg bg-card border-border">
+            <CardContent className="p-8">
+              <blockquote className="text-lg font-medium text-foreground italic border-l-4 border-accent pl-4">
+                “As Founder of Vamsiram, I envision building India-first, multilingual, sovereign AI infrastructure to serve real Bharat—from Tier-2 real estate to defense AI. I believe in ethical intelligence, culturally rooted design, and scalable impact.”
+              </blockquote>
+              <p className="mt-6 font-semibold text-primary">
+                Vamsee Krishna Kari
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Founder & CEO, VAMSIRAM ENTERPRISES PVT LTD
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="shadow-lg bg-card border-border">
+            <CardContent className="p-8">
+               <blockquote className="text-lg font-medium text-foreground italic border-l-4 border-accent pl-4">
+                “My mission is to transform ideas into execution at scale—bridging deep tech with human-centric impact across GovTech, LegalTech, and Smart Cities. At Vamsiram, we engineer trust through design, performance, and social alignment.”
+              </blockquote>
+              <p className="mt-6 font-semibold text-primary">
+                [Future Co-Founder]
+              </p>
+              <p className="text-sm text-muted-foreground">
+                COO / CTO
+              </p>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );

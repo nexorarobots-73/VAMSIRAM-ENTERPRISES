@@ -76,11 +76,11 @@ export function InquirySection({
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center">
             <div className="inline-block bg-accent/10 p-3 rounded-full mb-4">
-                <Lightbulb className="w-8 h-8 text-accent-dark"/>
+                <Lightbulb className="w-8 h-8 text-accent"/>
             </div>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Get AI-Powered Insights</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">Get AI-Powered Insights</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Have a question? Enter your inquiry below, and our AI will analyze our pitch to highlight the most relevant sections for you.
+            Have a question? Enter your inquiry below, and our AI will analyze our offerings to highlight the most relevant sections for you.
           </p>
         </div>
 
@@ -94,8 +94,8 @@ export function InquirySection({
                   <FormLabel className="sr-only">Your Inquiry</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="e.g., 'What is your competitive advantage in the AI space?' or 'Tell me about your long-term growth strategy.'"
-                      className="resize-none min-h-[120px] text-base"
+                      placeholder="e.g., 'What are your solutions for government agencies?' or 'Tell me about your defense technology.'"
+                      className="resize-none min-h-[120px] text-base bg-secondary border-border focus:ring-accent"
                       {...field}
                     />
                   </FormControl>
