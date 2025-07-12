@@ -19,10 +19,10 @@ export function FounderVision() {
                 “As Founder of Vamsiram, I envision building India-first, multilingual, sovereign AI infrastructure to serve real Bharat—from Tier-2 real estate to defense AI. I believe in ethical intelligence, culturally rooted design, and scalable impact.”
               </blockquote>
               <p className="mt-6 font-semibold text-primary">
-                Vamsee Krishna Kari
+                Vamsee K
               </p>
               <p className="text-sm text-muted-foreground">
-                Founder & CEO, VAMSIRAM ENTERPRISES PVT LTD
+                Founder & CEO/CTO, VAMSIRAM ENTERPRISES PVT LTD
               </p>
             </CardContent>
           </Card>
@@ -32,10 +32,10 @@ export function FounderVision() {
                 “My mission is to transform ideas into execution at scale—bridging deep tech with human-centric impact across GovTech, LegalTech, and Smart Cities. At Vamsiram, we engineer trust through design, performance, and social alignment.”
               </blockquote>
               <p className="mt-6 font-semibold text-primary">
-                [Future Co-Founder]
+                Krishram K
               </p>
               <p className="text-sm text-muted-foreground">
-                COO / CTO
+                COO & Co-Founder, VAMSIRAM ENTERPRISES PVT LTD
               </p>
             </CardContent>
           </Card>
