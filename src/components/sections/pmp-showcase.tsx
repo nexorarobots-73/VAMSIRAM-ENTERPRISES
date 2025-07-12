@@ -44,7 +44,7 @@ export function PmpShowcase() {
                   width={600}
                   height={450}
                   className="w-full h-auto object-cover"
-                  data-ai-hint="coming soon"
+                  data-ai-hint="real estate app"
                 />
               </CardContent>
             </Card>
