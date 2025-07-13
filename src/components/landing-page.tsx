@@ -1,29 +1,24 @@
 "use client";
 
-import { useState } from 'react';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
-import { PitchSections as ServicesSection } from '@/components/sections/pitch-sections';
-import { PmpShowcase as ProductSection } from '@/components/sections/pmp-showcase';
-import { FounderVision } from '@/components/sections/founder-vision';
-import { Partners } from '@/components/sections/partners';
+import { About } from '@/components/sections/about';
+import { Vision } from '@/components/sections/vision';
+import { PmpShowcase } from '@/components/sections/pmp-showcase';
+import { NexoraRobotics } from '@/components/sections/nexora-robotics';
 import { ComingSoon } from '@/components/sections/coming-soon';
-import { InquiryAnalyzer } from '@/components/sections/inquiry-analyzer';
 
 export function LandingPage() {
-  const [highlightedSections, setHighlightedSections] = useState<string[]>([]);
- 
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
         <Hero />
-        <ProductSection />
-        <ServicesSection highlightedSections={highlightedSections} />
-        <InquiryAnalyzer setHighlightedSections={setHighlightedSections} />
-        <FounderVision />
-        <Partners />
+        <About />
+        <PmpShowcase />
+        <Vision />
+        <NexoraRobotics />
         <ComingSoon />
       </main>
       <Footer />

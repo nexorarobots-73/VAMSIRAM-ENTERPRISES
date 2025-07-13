@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'VAMSIRAM AI | AI-Powered by Design. Built for the Next Billion.',
-  description: "Building India's Deep Tech AI Backbone for Real Estate, LegalTech, and Defense.",
+  title: 'VAMSIRAM AI | Post My Property',
+  description: "Building India's most intelligent property tech ecosystem.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark !scroll-smooth">
+    <html lang="en" className="!scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
