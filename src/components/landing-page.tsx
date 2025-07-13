@@ -9,6 +9,7 @@ import { PmpShowcase as ProductSection } from '@/components/sections/pmp-showcas
 import { FounderVision } from '@/components/sections/founder-vision';
 import { Partners } from '@/components/sections/partners';
 import { ComingSoon } from '@/components/sections/coming-soon';
+import { InquiryAnalyzer } from '@/components/sections/inquiry-analyzer';
 
 
 export const PITCH_DATA = {
@@ -52,7 +53,8 @@ export function LandingPage() {
       <main className="flex-1">
         <Hero />
         <ProductSection />
-        <ServicesSection highlightedSections={[]} />
+        <ServicesSection highlightedSections={highlightedSections} />
+        <InquiryAnalyzer setHighlightedSections={setHighlightedSections} />
         <FounderVision />
         <Partners />
         <ComingSoon />
