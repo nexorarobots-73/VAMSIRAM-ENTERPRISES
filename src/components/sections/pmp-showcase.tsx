@@ -7,6 +7,12 @@ import Autoplay from "embla-carousel-autoplay";
 
 const showcaseItems = [
   {
+    src: "/images/pmp-showcase/Main Screen.png",
+    alt: "Starting Thing",
+    caption: "Interactive dashboards for buyers and sellers.",
+    hint: "dashboard data analytics"
+  },
+  {
     src: "/images/pmp-showcase/Landing Screen.png",
     alt: "Landing Screen",
     caption: "Welcome to Post My Property.",
