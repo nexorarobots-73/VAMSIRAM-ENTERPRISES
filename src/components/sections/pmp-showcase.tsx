@@ -48,9 +48,9 @@ export function PmpShowcase() {
                   id="showcaseImage"
                   src="/images/PMP_app_showcase.png"
                   alt="Post My Property Platform Showcase"
-                  width={600}
-                  height={450}
-                  className="w-full h-auto object-cover"
+                  width={1200}
+                  height={900}
+                  className="w-full h-auto object-contain"
                   data-ai-hint="real estate platform"
                 />
               </CardContent>
