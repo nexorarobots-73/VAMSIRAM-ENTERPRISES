@@ -7,43 +7,44 @@ import Autoplay from "embla-carousel-autoplay";
 
 const showcaseItems = [
   {
-    src: "/images/pmp-showcase/Landing%20Screen.png",
+    src: "/images/pmp-showcase/landing-screen.png",
     alt: "Landing Screen",
     caption: "Welcome to Post My Property.",
     hint: "mobile app screen"
   },
   {
-    src: "/images/pmp-showcase/Getstarted%20Sreen.png",
+    src: "/images/pmp-showcase/get-started-screen.png",
     alt: "Get Started Screen",
     caption: "Effortless onboarding with phone-based login.",
     hint: "mobile app screen"
   },
   {
-    src: "/images/pmp-showcase/Auth%20Screen.png",
+    src: "/images/pmp-showcase/auth-screen.png",
     alt: "Auth/Login Screen",
     caption: "Secure and simple authentication.",
     hint: "mobile app login"
   },
   {
-    src: "/images/pmp-showcase/OTPScreen.png",
+    src: "/images/pmp-showcase/otp-screen.png",
     alt: "OTP Verification Screen",
     caption: "Fast OTP verification for enhanced security.",
     hint: "mobile verification screen"
   },
+
   {
-    src: "/images/pmp-showcase/RegisterScreen.png",
+    src: "/images/pmp-showcase/register-screen.png",
     alt: "Register Screen",
     caption: "Quick and easy registration process.",
     hint: "mobile app register"
   },
   {
-    src: "/images/pmp-showcase/Homescreen.png",
+    src: "/images/pmp-showcase/home-screen.png",
     alt: "Home Feed / Listings",
     caption: "Curated property feeds with AI-powered filters.",
     hint: "real estate listings"
   },
   {
-    src: "/images/pmp-showcase/Buyers%20Screen.png",
+    src: "/images/pmp-showcase/buyers-screen.png",
     alt: "Buyer Dashboard",
     caption: "Interactive dashboards for buyers and sellers.",
     hint: "dashboard data analytics"
