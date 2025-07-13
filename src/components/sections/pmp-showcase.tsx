@@ -4,9 +4,41 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
+import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+const showcaseImages = [
+  {
+    src: "https://placehold.co/1200x900.png",
+    alt: "Modern dashboard view of the PMP platform.",
+    hint: "modern dashboard"
+  },
+  {
+    src: "https://placehold.co/1200x900.png",
+    alt: "Property listing page with map integration.",
+    hint: "property listing"
+  },
+  {
+    src: "https://placehold.co/1200x900.png",
+    alt: "Mobile app view showing property details.",
+    hint: "mobile app"
+  },
+  {
+    src: "https://placehold.co/1200x900.png",
+    alt: "AI-powered analytics and valuation chart.",
+    hint: "analytics chart"
+  },
+];
+
 
 export function PmpShowcase() {
   const features = [
@@ -42,19 +74,34 @@ export function PmpShowcase() {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <Card className="overflow-hidden shadow-lg shadow-accent/10 transform transition-transform duration-500 hover:scale-105 border border-border">
-              <CardContent className="p-0">
-                <Image
-                  id="showcaseImage"
-                  src="/images/PMP_app_showcase.png"
-                  alt="Post My Property Platform Showcase"
-                  width={1200}
-                  height={900}
-                  className="w-full h-auto object-contain"
-                  data-ai-hint="real estate platform"
-                />
-              </CardContent>
-            </Card>
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {showcaseImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                     <Card className="overflow-hidden shadow-lg shadow-accent/10 border border-border">
+                        <CardContent className="p-0">
+                           <Image
+                            src={image.src}
+                            alt={image.alt}
+                            width={1200}
+                            height={900}
+                            className="w-full h-auto object-contain aspect-[4/3]"
+                            data-ai-hint={image.hint}
+                          />
+                        </CardContent>
+                      </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden sm:flex" />
+              <CarouselNext className="hidden sm:flex" />
+            </Carousel>
           </div>
         </div>
       </div>
