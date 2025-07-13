@@ -7,19 +7,19 @@ import Autoplay from "embla-carousel-autoplay";
 
 const showcaseItems = [
   {
-    src: "/images/pmp-showcase/Landing Screen.png",
+    src: "/images/pmp-showcase/Landing%20Screen.png",
     alt: "Landing Screen",
     caption: "Welcome to Post My Property.",
     hint: "mobile app screen"
   },
   {
-    src: "/images/pmp-showcase/Getstarted Screen.png",
+    src: "/images/pmp-showcase/Getstarted%20Sreen.png",
     alt: "Get Started Screen",
     caption: "Effortless onboarding with phone-based login.",
     hint: "mobile app screen"
   },
   {
-    src: "/images/pmp-showcase/Auth Screen.png",
+    src: "/images/pmp-showcase/Auth%20Screen.png",
     alt: "Auth/Login Screen",
     caption: "Secure and simple authentication.",
     hint: "mobile app login"
@@ -43,7 +43,7 @@ const showcaseItems = [
     hint: "real estate listings"
   },
   {
-    src: "/images/pmp-showcase/Buyers Screen.png",
+    src: "/images/pmp-showcase/Buyers%20Screen.png",
     alt: "Buyer Dashboard",
     caption: "Interactive dashboards for buyers and sellers.",
     hint: "dashboard data analytics"
