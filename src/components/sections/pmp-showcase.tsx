@@ -6,22 +6,22 @@ import { CheckCircle } from "lucide-react";
 
 export function PmpShowcase() {
   const features = [
-    "Advanced AI algorithms",
-    "High-precision sensors",
-    "Real-time data processing",
-    "Scalable and modular architecture"
+    "AI-Powered Property Valuation",
+    "Automated Legal Document Analysis",
+    "Seamless Digital Onboarding for Agents",
+    "Multilingual Support for Tier 2/3 Cities"
   ];
 
   return (
-    <section id="showcase" className="py-16 lg:py-24 bg-background">
+    <section id="product" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 lg:order-1">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
-              Our Flagship Autonomous Robot
+              Post My Property (PMP)
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Discover our state-of-the-art autonomous robot, engineered for performance, reliability, and intelligence. It's designed to operate in challenging environments, delivering exceptional results with minimal human oversight.
+              Our flagship platform, Post My Property, revolutionizes the real estate sector with AI-driven insights, streamlined workflows, and unparalleled access for the Indian market.
             </p>
             <ul className="mt-6 space-y-3">
               {features.map((feature, index) => (
@@ -32,19 +32,19 @@ export function PmpShowcase() {
               ))}
             </ul>
             <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="#">Request a Demo</Link>
+              <Link href="#">View Live Demo</Link>
             </Button>
           </div>
           <div className="order-1 lg:order-2">
-            <Card className="overflow-hidden shadow-lg shadow-blue-500/10 transform transition-transform duration-500 hover:scale-105 border border-border">
+            <Card className="overflow-hidden shadow-lg shadow-accent/10 transform transition-transform duration-500 hover:scale-105 border border-border">
               <CardContent className="p-0">
                 <Image
                   src="https://placehold.co/600x450.png"
-                  alt="Nexora Robotics Showcase"
+                  alt="Post My Property Platform Showcase"
                   width={600}
                   height={450}
                   className="w-full h-auto object-cover"
-                  data-ai-hint="robotics future"
+                  data-ai-hint="real estate platform"
                 />
               </CardContent>
             </Card>

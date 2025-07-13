@@ -1,14 +1,14 @@
 import { PITCH_DATA } from '@/components/landing-page';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Cog, BrainCircuit, Bot, FlaskConical } from 'lucide-react';
+import { Cloud, BrainCircuit, Scan, Smartphone } from 'lucide-react';
 import React from 'react';
 
 const ICONS: { [key: string]: React.ElementType } = {
-  'Custom Robotics Solutions': Cog,
-  'AI and Machine Learning Integration': BrainCircuit,
-  'Autonomous Systems': Bot,
-  'Research and Development': FlaskConical,
+  'Cloud & Infrastructure': Cloud,
+  'AI/ML SaaS': BrainCircuit,
+  'AR/VR for Industry & Defense': Scan,
+  'Camera & Android OS Enhancement': Smartphone,
 };
 
 type PitchSectionsProps = {
@@ -17,7 +17,7 @@ type PitchSectionsProps = {
 
 export function PitchSections({ highlightedSections }: PitchSectionsProps) {
   return (
-    <section id="solutions" className="py-16 lg:py-24 bg-secondary">
+    <section id="services" className="py-16 lg:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">{PITCH_DATA.title}</h2>

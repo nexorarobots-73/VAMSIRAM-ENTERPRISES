@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Nexora Robotics | Crafting the Future of Robotics',
-  description: "Where Vision Meets Precision.",
+  title: 'VAMSIRAM AI | AI-Powered by Design. Built for the Next Billion.',
+  description: "Building India's Deep Tech AI Backbone for Real Estate, LegalTech, and Defense.",
 };
 
 export default function RootLayout({
