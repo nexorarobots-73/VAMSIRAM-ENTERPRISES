@@ -13,7 +13,6 @@ import { z } from 'zod';
 
 const AnalyzeInquiryInputSchema = z.object({
   inquiry: z.string().describe('The user\'s inquiry text.'),
-  photoUrl: z.string().optional().describe('An optional photo URL provided by the user.'),
 });
 export type AnalyzeInquiryInput = z.infer<typeof AnalyzeInquiryInputSchema>;
 
@@ -35,15 +34,12 @@ const prompt = ai.definePrompt({
   output: { schema: AnalyzeInquiryOutputSchema },
   prompt: `You are an expert at VAMSIRAM AI. Your task is to analyze a user's inquiry and determine which parts of the company pitch are most relevant to them.
 
-Based on the user's inquiry, identify the most relevant sections from the list below. The inquiry may also include an image, which you should consider in your analysis if provided.
+Based on the user's inquiry, identify the most relevant sections from the list below.
 
 Here are the available sections of the pitch deck:
 ${sectionsPrompt}
 
 User Inquiry: "{{inquiry}}"
-{{#if photoUrl}}
-User's image is available at: {{media url=photoUrl}}
-{{/if}}
 
 Your response should be helpful and guide the user towards the relevant sections. Also, return the titles of the most relevant sections in the 'highlightedSections' field.
 `,
