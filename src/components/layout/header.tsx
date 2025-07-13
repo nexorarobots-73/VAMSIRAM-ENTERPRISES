@@ -7,10 +7,9 @@ import { Menu } from "lucide-react";
 
 export function Header() {
   const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#product", label: "Product" },
-    { href: "#vision", label: "Vision" },
-    { href: "#robotics", label: "Nexora" },
+    { href: "#brands", label: "Brands" },
+    { href: "#pmp-showcase", label: "PMP App" },
+    { href: "#nexora", label: "Nexora" },
   ];
 
   return (
@@ -32,7 +31,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild>
-            <Link href="#product">Join Waitlist</Link>
+            <Link href="#coming-soon">Join Waitlist</Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -56,7 +55,7 @@ export function Header() {
                   </Link>
                 ))}
                 <Button asChild>
-                  <Link href="#product">Join Waitlist</Link>
+                  <Link href="#coming-soon">Join Waitlist</Link>
                 </Button>
               </div>
             </SheetContent>

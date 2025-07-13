@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -8,19 +7,19 @@ import Autoplay from "embla-carousel-autoplay";
 
 const showcaseItems = [
   {
-    src: "/images/pmp-showcase/Landing%20Screen.png",
+    src: "/images/pmp-showcase/Landing Screen.png",
     alt: "Landing Screen",
     caption: "Welcome to Post My Property.",
     hint: "mobile app screen"
   },
   {
-    src: "/images/pmp-showcase/Getstarted%20Sreen.png",
+    src: "/images/pmp-showcase/Getstarted Screen.png",
     alt: "Get Started Screen",
     caption: "Effortless onboarding with phone-based login.",
     hint: "mobile app screen"
   },
   {
-    src: "/images/pmp-showcase/Auth%20Screen.png",
+    src: "/images/pmp-showcase/Auth Screen.png",
     alt: "Auth/Login Screen",
     caption: "Secure and simple authentication.",
     hint: "mobile app login"
@@ -44,7 +43,7 @@ const showcaseItems = [
     hint: "real estate listings"
   },
   {
-    src: "/images/pmp-showcase/Buyers%20Screen.png",
+    src: "/images/pmp-showcase/Buyers Screen.png",
     alt: "Buyer Dashboard",
     caption: "Interactive dashboards for buyers and sellers.",
     hint: "dashboard data analytics"
@@ -53,21 +52,21 @@ const showcaseItems = [
 
 export function PmpShowcase() {
   return (
-    <section id="product" className="py-16 lg:py-24 bg-secondary/50">
+    <section id="pmp-showcase" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
             Post My Property (PMP)
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Our flagship platform, Post My Property, revolutionizes the real estate sector with AI-driven insights and streamlined workflows.
+            Search. List. Sell. Smarter. Our flagship platform revolutionizes real estate with AI-driven insights and streamlined workflows.
           </p>
         </div>
         <div className="flex justify-center">
             <Carousel
               plugins={[
                 Autoplay({
-                  delay: 2000,
+                  delay: 2500,
                   stopOnInteraction: true,
                 }),
               ]}

@@ -6,10 +6,10 @@ export function Vision() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
-                Our Vision
+                Our Vision & Mission
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              “To blend real estate and AI through sustainable, accessible, and intuitive tools for every Indian household.”
+             “We are building India’s most intelligent property tech ecosystem—secure, transparent, and human-first—powered by AI/ML and scalable IoT platforms.”
             </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

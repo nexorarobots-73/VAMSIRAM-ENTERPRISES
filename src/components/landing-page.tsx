@@ -3,8 +3,7 @@
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
-import { About } from '@/components/sections/about';
-import { Vision } from '@/components/sections/vision';
+import { Brands } from '@/components/sections/brands';
 import { PmpShowcase } from '@/components/sections/pmp-showcase';
 import { NexoraRobotics } from '@/components/sections/nexora-robotics';
 import { ComingSoon } from '@/components/sections/coming-soon';
@@ -15,9 +14,8 @@ export function LandingPage() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <About />
+        <Brands />
         <PmpShowcase />
-        <Vision />
         <NexoraRobotics />
         <ComingSoon />
       </main>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function ComingSoon() {
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section id="coming-soon" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline bg-gradient-to-r from-primary via-accent to-purple-400 bg-clip-text text-transparent animate-pulse">
           Full Product Launch Coming Soon
