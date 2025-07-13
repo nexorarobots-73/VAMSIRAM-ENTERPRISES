@@ -20,7 +20,7 @@ export function Hero() {
             <Link href="#pmp-showcase">View PMP App Screens</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link href="#coming-soon">Join Waitlist</Link>
+            <Link href="/join-waitlist">Join Waitlist</Link>
           </Button>
         </div>
       </div>

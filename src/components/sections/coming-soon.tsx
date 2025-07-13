@@ -13,7 +13,7 @@ export function ComingSoon() {
         </p>
         <div className="mt-8">
             <Button size="lg" asChild>
-                <Link href="#">Join Waitlist</Link>
+                <Link href="/join-waitlist">Join Waitlist</Link>
             </Button>
         </div>
       </div>
