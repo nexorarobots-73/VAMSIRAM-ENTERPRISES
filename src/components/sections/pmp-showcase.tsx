@@ -4,19 +4,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, ChangeEvent } from "react";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { CheckCircle, Upload, Loader2, AlertCircle } from "lucide-react";
+import { CheckCircle, Upload, Loader2 } from "lucide-react";
 
-import { storage } from "@/lib/firebase";
+import { uploadFile } from "@/ai/flows/upload-file-flow";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Progress } from "@/components/ui/progress";
 import { Input } from "@/components/ui/input";
 
 export function PmpShowcase() {
   const [imageSrc, setImageSrc] = useState("/images/PMP%20app.png");
-  const [uploadProgress, setUploadProgress] = useState<number | null>(null);
   const [isUploading, setIsUploading] = useState(false);
   const { toast } = useToast();
 
@@ -27,7 +24,7 @@ export function PmpShowcase() {
     "Multilingual Support for Tier 2/3 Cities"
   ];
 
-  const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) {
       return;
@@ -43,44 +40,41 @@ export function PmpShowcase() {
       return;
     }
 
-    handleUpload(file);
-  };
-
-  const handleUpload = (file: File) => {
-    const storageRef = ref(storage, `showcase_uploads/${Date.now()}_${file.name}`);
-    const uploadTask = uploadBytesResumable(storageRef, file);
-
     setIsUploading(true);
-    setUploadProgress(0);
-
-    uploadTask.on(
-      "state_changed",
-      (snapshot) => {
-        const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        setUploadProgress(progress);
-      },
-      (error) => {
-        console.error("Upload error:", error);
-        setIsUploading(false);
-        setUploadProgress(null);
-        toast({
-          variant: "destructive",
-          title: "Upload Failed",
-          description: "There was a problem uploading your image. Please try again.",
+    
+    try {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = async () => {
+        const base64Data = reader.result as string;
+        const result = await uploadFile({
+          fileName: file.name,
+          fileContent: base64Data,
         });
-      },
-      () => {
-        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-          setImageSrc(downloadURL);
-          setIsUploading(false);
-          setUploadProgress(null);
+
+        if (result.downloadURL) {
+          setImageSrc(result.downloadURL);
           toast({
             title: "Upload Complete",
             description: "Your image has been successfully uploaded.",
           });
-        });
-      }
-    );
+        } else {
+          throw new Error("Upload failed to return a URL.");
+        }
+      };
+      reader.onerror = (error) => {
+        throw error;
+      };
+    } catch (error) {
+      console.error("Upload error:", error);
+      toast({
+        variant: "destructive",
+        title: "Upload Failed",
+        description: "There was a problem uploading your image. Please try again.",
+      });
+    } finally {
+      setIsUploading(false);
+    }
   };
 
   return (
@@ -106,10 +100,10 @@ export function PmpShowcase() {
                <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                  <Link href="#">View Live Demo</Link>
                </Button>
-               <Button asChild variant="outline">
+               <Button asChild variant="outline" disabled={isUploading}>
                   <label htmlFor="showcase-upload" className="cursor-pointer">
-                    <Upload className="mr-2 h-4 w-4" />
-                    Upload Image
+                    {isUploading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Upload className="mr-2 h-4 w-4" />}
+                    {isUploading ? "Uploading..." : "Upload Image"}
                   </label>
                </Button>
                <Input id="showcase-upload" type="file" className="sr-only" onChange={handleFileChange} accept="image/jpeg,image/png,image/gif" disabled={isUploading}/>
@@ -126,13 +120,13 @@ export function PmpShowcase() {
                   height={450}
                   className="w-full h-auto object-cover"
                   data-ai-hint="real estate platform"
+                  unoptimized={imageSrc.startsWith('data:')}
                 />
               </CardContent>
             </Card>
-            {isUploading && uploadProgress !== null && (
-              <div className="mt-4">
-                <Progress value={uploadProgress} className="w-full" />
-                <p className="text-center text-sm text-muted-foreground mt-2">Uploading... {Math.round(uploadProgress)}%</p>
+            {isUploading && (
+              <div className="mt-4 text-center">
+                 <p className="text-sm text-muted-foreground animate-pulse">Uploading your image, please wait...</p>
               </div>
             )}
           </div>
