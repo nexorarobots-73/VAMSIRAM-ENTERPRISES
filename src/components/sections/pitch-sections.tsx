@@ -1,4 +1,4 @@
-import { PITCH_DATA } from '@/components/landing-page';
+import { PITCH_DATA } from '@/lib/pitch-data';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Cloud, BrainCircuit, Scan, Smartphone } from 'lucide-react';

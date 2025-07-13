@@ -7,7 +7,7 @@
  * - AnalyzeInquiryOutput - The return type for the analyzeInquiry function.
  */
 
-import { PITCH_DATA } from '@/components/landing-page';
+import { PITCH_DATA } from '@/lib/pitch-data';
 import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 
