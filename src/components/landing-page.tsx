@@ -10,6 +10,7 @@ import { FounderVision } from '@/components/sections/founder-vision';
 import { Partners } from '@/components/sections/partners';
 import { ComingSoon } from '@/components/sections/coming-soon';
 import { InquiryAnalyzer } from '@/components/sections/inquiry-analyzer';
+import { ImageGallery } from '@/components/sections/image-gallery';
 
 export function LandingPage() {
   const [highlightedSections, setHighlightedSections] = useState<string[]>([]);
@@ -21,6 +22,7 @@ export function LandingPage() {
         <Hero />
         <ProductSection />
         <ServicesSection highlightedSections={highlightedSections} />
+        <ImageGallery />
         <InquiryAnalyzer setHighlightedSections={setHighlightedSections} />
         <FounderVision />
         <Partners />
