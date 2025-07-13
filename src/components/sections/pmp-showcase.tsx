@@ -15,7 +15,7 @@ import { Progress } from "@/components/ui/progress";
 import { Input } from "@/components/ui/input";
 
 export function PmpShowcase() {
-  const [imageSrc, setImageSrc] = useState("/images/PMP app.png");
+  const [imageSrc, setImageSrc] = useState("/images/PMP%20app.png");
   const [uploadProgress, setUploadProgress] = useState<number | null>(null);
   const [isUploading, setIsUploading] = useState(false);
   const { toast } = useToast();
