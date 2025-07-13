@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -14,7 +15,7 @@ import { Progress } from "@/components/ui/progress";
 import { Input } from "@/components/ui/input";
 
 export function PmpShowcase() {
-  const [imageSrc, setImageSrc] = useState("https://placehold.co/600x450.png");
+  const [imageSrc, setImageSrc] = useState("/images/PMP app.png");
   const [uploadProgress, setUploadProgress] = useState<number | null>(null);
   const [isUploading, setIsUploading] = useState(false);
   const { toast } = useToast();
