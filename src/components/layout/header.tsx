@@ -7,17 +7,17 @@ import { Menu } from "lucide-react";
 
 export function Header() {
   const navLinks = [
-    { href: "#solutions", label: "Solutions" },
+    { href: "#solutions", label: "What We Do" },
     { href: "#showcase", label: "Showcase" },
-    { href: "#vision", label: "Vision" },
-    { href: "#inquiry", label: "AI Insights" },
+    { href: "#vision", label: "Mission" },
+    { href: "#inquiry", label: "Contact" },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold sm:inline-block">VAMSIRAM AI</span>
+          <span className="font-bold sm:inline-block">Nexora Robotics</span>
         </Link>
         <nav className="hidden flex-1 items-center gap-6 text-sm md:flex">
           {navLinks.map((link) => (
@@ -44,7 +44,7 @@ export function Header() {
             <SheetContent side="right">
               <div className="grid gap-6 p-6">
                 <Link href="/" className="flex items-center space-x-2">
-                  <span className="font-bold">VAMSIRAM AI</span>
+                  <span className="font-bold">Nexora Robotics</span>
                 </Link>
                 {navLinks.map((link) => (
                   <Link

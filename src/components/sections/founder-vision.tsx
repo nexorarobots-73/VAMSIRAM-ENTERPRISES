@@ -6,36 +6,36 @@ export function FounderVision() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
-            Our Vision
+            Our Mission
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Driven by a commitment to India's technological sovereignty and inclusive growth.
+            To pioneer advancements in robotics and artificial intelligence to create a smarter, more efficient, and sustainable world.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="shadow-lg bg-card border-border">
             <CardContent className="p-8">
               <blockquote className="text-lg font-medium text-foreground italic border-l-4 border-accent pl-4">
-                “As Founder of Vamsiram, I envision building India-first, multilingual, sovereign AI infrastructure to serve real Bharat—from Tier-2 real estate to defense AI. I believe in ethical intelligence, culturally rooted design, and scalable impact.”
+                “We are committed to pushing the boundaries of technology through relentless innovation, rigorous research, and a passion for excellence.”
               </blockquote>
               <p className="mt-6 font-semibold text-primary">
-                Vamsee K
+                Vamsee Krishna Kari
               </p>
               <p className="text-sm text-muted-foreground">
-                Founder & CEO/CTO, VAMSIRAM ENTERPRISES PVT LTD
+                Founder, CEO & CTO
               </p>
             </CardContent>
           </Card>
           <Card className="shadow-lg bg-card border-border">
             <CardContent className="p-8">
                <blockquote className="text-lg font-medium text-foreground italic border-l-4 border-accent pl-4">
-                “My mission is to transform ideas into execution at scale—bridging deep tech with human-centric impact across GovTech, LegalTech, and Smart Cities. At Vamsiram, we engineer trust through design, performance, and social alignment.”
+                “Our focus is on building intelligent systems that not only drive industrial progress but also contribute positively to society and the environment.”
               </blockquote>
               <p className="mt-6 font-semibold text-primary">
                 Krishram K
               </p>
               <p className="text-sm text-muted-foreground">
-                COO & Co-Founder, VAMSIRAM ENTERPRISES PVT LTD
+                Co-Founder & COO
               </p>
             </CardContent>
           </Card>

@@ -1,14 +1,14 @@
 import { PITCH_DATA } from '@/components/landing-page';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Building, Shield, Bot, Layers } from 'lucide-react';
+import { Cog, BrainCircuit, Bot, FlaskConical } from 'lucide-react';
 import React from 'react';
 
 const ICONS: { [key: string]: React.ElementType } = {
-  'Post My Property (Real Estate AI)': Building,
-  'Sonic Radar (Defense/Healthcare)': Shield,
-  'Civic Chatbots (GovTech)': Bot,
-  'AI Plugins (OCR, HR, Legal)': Layers,
+  'Custom Robotics Solutions': Cog,
+  'AI and Machine Learning Integration': BrainCircuit,
+  'Autonomous Systems': Bot,
+  'Research and Development': FlaskConical,
 };
 
 type PitchSectionsProps = {

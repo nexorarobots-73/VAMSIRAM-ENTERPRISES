@@ -6,10 +6,10 @@ import { CheckCircle } from "lucide-react";
 
 export function PmpShowcase() {
   const features = [
-    "AI-Powered Property Matching",
-    "Intuitive Design for All Users",
-    "Scalable Real Estate Platform",
-    "Multilingual Support for Bharat"
+    "Advanced AI algorithms",
+    "High-precision sensors",
+    "Real-time data processing",
+    "Scalable and modular architecture"
   ];
 
   return (
@@ -18,10 +18,10 @@ export function PmpShowcase() {
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 lg:order-1">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
-              Flagship Platform: Post My Property
+              Our Flagship Autonomous Robot
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Our first proof-of-concept, "Post My Property" (PMP), revolutionizes the real estate market by integrating our core AI + Design philosophy. It's more than a platform; it's the future of property technology, built for India.
+              Discover our state-of-the-art autonomous robot, engineered for performance, reliability, and intelligence. It's designed to operate in challenging environments, delivering exceptional results with minimal human oversight.
             </p>
             <ul className="mt-6 space-y-3">
               {features.map((feature, index) => (
@@ -32,7 +32,7 @@ export function PmpShowcase() {
               ))}
             </ul>
             <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="#">Request PMP Demo</Link>
+              <Link href="#">Request a Demo</Link>
             </Button>
           </div>
           <div className="order-1 lg:order-2">
@@ -40,11 +40,11 @@ export function PmpShowcase() {
               <CardContent className="p-0">
                 <Image
                   src="https://placehold.co/600x450.png"
-                  alt="Post My Property Platform Showcase"
+                  alt="Nexora Robotics Showcase"
                   width={600}
                   height={450}
                   className="w-full h-auto object-cover"
-                  data-ai-hint="coming soon"
+                  data-ai-hint="robotics future"
                 />
               </CardContent>
             </Card>

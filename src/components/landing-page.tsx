@@ -13,32 +13,32 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
 export const PITCH_DATA = {
-  title: 'Our Solutions',
-  description: 'We are building a diverse portfolio of AI-powered solutions tailored for India\'s unique challenges and opportunities.',
+  title: 'What We Do',
+  description: 'We are committed to pushing the boundaries of technology through relentless innovation, rigorous research, and a passion for excellence.',
   sections: [
     {
-      id: 'real-estate-ai',
-      title: 'Post My Property (Real Estate AI)',
-      content: "AI-driven platform to streamline property listings, valuation, and transactions for India's booming real estate market, focusing on Tier 2/3 cities.",
-      keywords: 'real estate property ai'
+      id: 'custom-robotics',
+      title: 'Custom Robotics Solutions',
+      content: "We design and build bespoke robotic systems tailored to meet the specific needs of our clients, from concept to deployment.",
+      keywords: 'robotics custom solutions'
     },
     {
-      id: 'defense-healthcare',
-      title: 'Sonic Radar (Defense/Healthcare)',
-      content: 'Advanced sensor fusion and AI analysis for defense surveillance and non-invasive healthcare diagnostics. A high-impact, dual-use technology.',
-      keywords: 'radar defense healthcare'
+      id: 'ai-ml-integration',
+      title: 'AI and Machine Learning Integration',
+      content: 'Our expertise in AI and ML allows us to imbue our robots with advanced capabilities, such as object recognition, predictive maintenance, and intelligent decision-making.',
+      keywords: 'ai machine learning'
     },
     {
-      id: 'govtech',
-      title: 'Civic Chatbots (GovTech)',
-      content: 'Multilingual chatbots to improve citizen-government interaction, providing information and services efficiently and transparently.',
-      keywords: 'govtech chatbot citizen'
+      id: 'autonomous-systems',
+      title: 'Autonomous Systems',
+      content: 'We develop fully autonomous robots that can navigate complex environments, perform tasks without human intervention, and adapt to changing conditions.',
+      keywords: 'autonomous systems navigation'
     },
     {
-      id: 'ai-plugins',
-      title: 'AI Plugins (OCR, HR, Legal)',
-      content: 'A suite of versatile AI plugins for enterprises, including high-accuracy OCR, HR process automation, and legal document analysis.',
-      keywords: 'ai plugins enterprise'
+      id: 'r-and-d',
+      title: 'Research and Development',
+      content: 'Our dedicated R&D team is constantly exploring new frontiers in robotics, ensuring that we remain at the cutting edge of the industry.',
+      keywords: 'research development innovation'
     },
   ],
 };
